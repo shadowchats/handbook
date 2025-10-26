@@ -63,15 +63,15 @@ For questions about licensing or to request source code:
 ## Флоу ручного E2E-тестирования кода
 
 1. Локально (до создания PR):
-  1.1. Изолированно.
-  1.2. Опционально: интегрированно.
+  1. Изолированно.
+  2. Опционально: интегрированно.
 2. На деве.
 
 ## Виды ручного E2E-тестирования кода
 
 1. Локальное изолированное:
-  1.0. В репозитории каждого микросервиса лежит файл `docker-compose.yaml` именно для этого вида тестирования - этот файл поднимает сам микросервис и все зависимости, прямо используемые им.
-  1.1. `docker compose up --build`.
-  1.2. Опционально, если надо накатить миграции: `docker compose run --rm placeholder-service dotnet Shadowchats.Placeholder.Presentation.dll migrate`.
+  0. В репозитории каждого микросервиса лежит файл `docker-compose.yaml` именно для этого вида тестирования - этот файл поднимает сам микросервис и все зависимости, прямо используемые им.
+  1. `docker compose up --build`.
+  2. Опционально, если надо накатить миграции: `docker compose run --rm placeholder-service dotnet Shadowchats.Placeholder.Presentation.dll migrate`.
 2. Локальное интегрированное: поднимаешь в minikube K8s-кластер со всей системой, настраиваешь CI/CD и тестируешь. Подробную инструкцию смотри в [этом](https://github.com/shadowchats/deploy/tree/master) репозитории.
 3. На деве: где деньги, Лебовски?
