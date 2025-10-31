@@ -55,10 +55,7 @@ For questions about licensing or to request source code:
 | № | Технология    | Протокол                      | Порт      |
 | - | ------------- | ----------------------------- | --------- |
 | 1 | **REST API**  | HTTP/1.1                      | **8080**  |
-| 2 | **gRPC**      | HTTP/2 (H2C)                  | **50051** |
-| 3 | **gRPC-Web**  | HTTP/1.1 (через proxy/bridge) | **8081**  |
-| 4 | **WebSocket** | HTTP/1.1 (ws://)              | **6001**  |
-| 5 | **GraphQL**   | HTTP/1.1                      | **7000**  |
+| 2 | **gRPC**      | HTTP/2 (H2C)                  | **8081** |
 
 ## Флоу ручного E2E-тестирования кода
 
